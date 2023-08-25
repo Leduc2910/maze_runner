@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board-background {
+    position: relative;
+    top: -15px;
+    left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grass-background {
+    top: 150px;
+    left: 85px;
+    position: absolute;
+}
+
+#board {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#board div {
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(245, 245, 245, 0.38);
+}
+
+#menu-background {
+    position: relative;
+    top: -1px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    position: absolute;
+    top: 150px;
+}
+
+#playButton {
+    border: none;
+    background-color: transparent;
+}
+#number button {
+    width: 50px;
+    height: 50px;
+}
+#number input {
+    height: 46px;
+    width: 100px;
+    text-align: center;
+}
+
+#choice button {
+    margin-left: 25px;
+}

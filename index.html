@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maze</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body background="Elements/background.png">
+<div id="container">
+    <div id="board-background">
+        <img src="Elements/1.png" width="780"/>
+        <div id="grass-background">
+            <img src="Elements/grass.png" width="600"/>
+            <div id="board">
+            </div>
+            <div id="tool">
+                <center>
+
+                    <table style="border-collapse: separate; border-spacing: 6px; ">
+                        <tr>
+                            <td style="text-align: center">
+                                <button id="axe" style="background-color: rgba(11,227,11,0);"><img
+                                        src="Elements/axe.png" alt="" style="width: 40px"></button>
+                                <br>Amount: <span id="axeRemain">3</span></td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+        </div>
+        <div id="menu-background">
+            <img src="Elements/3.png" height="840"/>
+            <div id='menu'>
+                <div><b style="color: #692705; font-size: 35px">MAZE RUNNER</b></div>
+                <div style="padding-top: 10px"><b style="color: #692705;font-size: 22px">Giải mã mê cung</b></div>
+                <hr style="background-color: black; height: 3px; width: 100%; margin-top: 20px">
+                <div id="choice" style="margin: 25px 0 25px 0">
+                    <button style="background-color: transparent; border: none" id="delete"><img
+                            src="Elements/delete.png" title="clear-maze" width="40px" height="42px" style="margin-left: -25px"></button>
+                    <button style="background-color: transparent; border: none" id="reload"><img
+                            src="Elements/reload.png" title="reload-maze" width="40px" height="42px"></button>
+                    <button style="background-color: transparent; border: none" id="selectSD"><img
+                            src="Elements/source.png" title="select-SD" width="40px"></button>
+                    <button style="background-color: transparent; border: none" id="createWall"><img
+                            src="Elements/tree.png" title="create-wall" width="40px " height="45px"></button>
+                    <button style="background-color: transparent; border: none" id="createEnemy"><img
+                            src="Elements/gengar.png" title="create-enemy" width="40px " height="45px"></button>
+                </div>
+
+                <div id="number">
+                    <p style="font-size: 20px; text-align: left; color: #692705; padding-right: 100px">• Choose number
+                        of pokemon: </p>
+                    <button onclick="subtraction()">-</button>
+                    <input type="text" id="numberP" disabled value="7">
+                    <button onclick="addition()">+</button>
+                </div>
+                <div id="speed-container">
+                    <p style="font-size: 20px; text-align: left; color: #692705; padding-right: 100px">• Set speed:
+                        <select id="speed" style="width: 80px; text-align: center;height: 25px">
+                            <option>150</option>
+                            <option>50</option>
+                            <option>100</option>
+                            <option>200</option>
+                            <option>250</option>
+                            <option>2500</option>
+                        </select></p>
+                </div>
+                <p style="font-size: 20px; text-align: left; color: #692705">• Result: </p>
+                <p style="font-size: 19px; font-weight: normal; color: #692705;text-align: left; padding-left: 30px ">
+                    Time: <span id="time">00:00</span></p>
+                <p style="font-size: 19px; font-weight: normal; color: #692705;text-align: left; padding-left: 30px ">
+                    Total cost: <span id="count">0</span></p>
+                <button id="playButton"><img src="Elements/playButton2.png" width="150"/></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="elements.js"></script>
+<script src="grid.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
